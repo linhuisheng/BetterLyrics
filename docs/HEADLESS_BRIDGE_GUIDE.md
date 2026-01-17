@@ -24,6 +24,8 @@ dotnet run --project BetterLyrics.HeadlessHost/BetterLyrics.HeadlessHost.csproj 
 
 This process initializes BetterLyrics services, starts the GSMTC watcher, and opens the IPC pipe for the NativeAOT bridge.
 
+> If you run the headless host as an **unpackaged exe**, make sure the Windows App SDK runtime is available. The project uses the Windows App SDK bootstrapper to initialize the runtime without package identity.
+
 ## 3) Electron FFI bindings (example)
 
 Callback signature (C ABI):

@@ -16,6 +16,8 @@ namespace BetterLyrics.HeadlessHost
         {
             Console.CancelKeyPress += OnCancelKeyPress;
 
+            WindowsAppSdkBootstrapper.Initialize();
+
             HeadlessInitializer.EnsureDispatcherQueue();
             ServiceBootstrapper.EnsureInitialized();
             await HeadlessInitializer.InitializeDatabasesAsync();
@@ -29,6 +31,8 @@ namespace BetterLyrics.HeadlessHost
 
             Console.WriteLine("BetterLyrics Headless Host is running. Press Ctrl+C to exit.");
             ShutdownEvent.Wait();
+
+            WindowsAppSdkBootstrapper.Shutdown();
 
             return 0;
         }
