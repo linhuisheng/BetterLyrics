@@ -12,7 +12,9 @@
   </Folder>
   <Folder Name="/Plugins/_Dist/" />
   <Project Path="BetterLyrics.Core/BetterLyrics.Core.csproj" />
+  <Project Path="BetterLyrics.Bridge/BetterLyrics.Bridge.csproj" />
   <Project Path="BetterLyrics.DevTools/BetterLyrics.DevTools.csproj" Id="8ee58bf7-807d-486c-8d7d-c00bb9ec2b81" />
+  <Project Path="BetterLyrics.HeadlessHost/BetterLyrics.HeadlessHost.csproj" />
   <Project Path="BetterLyrics.WinUI3/BetterLyrics.WinUI3.csproj">
     <Platform Solution="*|ARM64" Project="ARM64" />
     <Platform Solution="*|x64" Project="x64" />
